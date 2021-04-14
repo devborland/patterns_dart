@@ -1,7 +1,7 @@
 import 'observer.dart';
 import 'subject.dart';
 
-class WeatherData implements Subject {
+class WeatherData extends Subject {
   late List<Observer> observers;
   double temp = 0;
   double humidity = 0;

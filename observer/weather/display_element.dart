@@ -1,3 +1,3 @@
-abstract class DisplayElement {
+mixin DisplayElement {
   void display();
 }
