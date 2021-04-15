@@ -14,13 +14,12 @@ class ForecastDisplay with DisplayElement implements Observer {
 
   @override
   void display() {
-    print("Forecast: ");
     if (currentPressure > lastPressure) {
-      print("Improving weather on the way");
+      print("Forecast: Improving weather on the way");
     } else if (currentPressure == lastPressure) {
-      print("More of the same");
+      print("Forecast: More of the same");
     } else if (currentPressure < lastPressure) {
-      print("Watch out for cooler, rainy weather");
+      print("Forecast: Watch out for cooler, rainy weather");
     }
   }
 
